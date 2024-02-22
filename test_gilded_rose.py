@@ -13,7 +13,7 @@ class GildedRoseTest(unittest.TestCase):
 
     def test_update_quality(self):
         """Test that update_quality correctly updates all items."""
-        items = [Item("Normal Item", 5, 10), Item("Aged Brie", 5, 0), Item("Backstage passes", 5, 10)]
+        items = [Item("Normal Item", 5, 10), Item("Aged Brie", 5, 0), Item("Backstage", 5, 10)]
         gilded_rose = GildedRose(items)
         gilded_rose.update_quality()
         self.assertEqual(items[0].quality, 9)
